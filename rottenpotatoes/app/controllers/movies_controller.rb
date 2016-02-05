@@ -1,7 +1,7 @@
 class MoviesController < ApplicationController
   
   def movie_params
-    params.require(:movie).permit(:title, :rating, :description, :release_date)
+    params.require(:movie).permit(:title, :rating, :description, :release_date, :director)
   end
 
   def show
@@ -9,9 +9,23 @@ class MoviesController < ApplicationController
     @movie = Movie.find(id) # look up movie by unique ID
     # will render app/views/movies/show.<extension> by default
   end
+  
+  def same_director
+    #debugger
+    id = params[:id]
+    @movie = Movie.find(id)
+    begin
+      @similiar_movies = Movie.same_director(@movie.director)
+    rescue Movie::NoDirectorError
+      #debugger
+      flash[:warning] = "#{@movie} has no director info"
+      redirect_to movies_path
+    end
+  end
 
   def index
     sort = params[:sort] || session[:sort]
+    #debugger
     case sort
     when 'title'
       ordering,@title_header = {:title => :asc}, 'hilite'

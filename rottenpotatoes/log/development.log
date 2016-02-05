@@ -863,3 +863,115 @@ Started GET "/assets/jquery.self.js?body=1" for ::1 at 2015-07-28 12:40:07 -0700
 
 
 Started GET "/assets/jquery_ujs.self.js?body=1" for ::1 at 2015-07-28 12:40:07 -0700
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.1ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddDirectorToMovies (20160204170515)
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.6ms)[0m  [1mALTER TABLE "movies" ADD "director" varchar[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160204170515"]]
+  [1m[36m (9.6ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (16.1ms)[0m  [1mCREATE TABLE "movies" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "title" varchar(255), "rating" varchar(255), "description" text, "release_date" datetime, "created_at" datetime, "updated_at" datetime, "director" varchar) [0m
+  [1m[35m (8.0ms)[0m  CREATE TABLE "schema_migrations" ("version" varchar NOT NULL) 
+  [1m[36m (0.1ms)[0m  [1mselect sqlite_version(*)[0m
+  [1m[35m (8.9ms)[0m  CREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")
+  [1m[36m (0.3ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (8.3ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('20160204170515')
+  [1m[36m (7.1ms)[0m  [1mINSERT INTO "schema_migrations" (version) VALUES ('20111119180638')[0m
+
+
+Started GET "/assets/rails.png" for 95.90.254.77 at 2016-02-05 13:09:33 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:39 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:39 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:39 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:40 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:41 +0000
+
+
+Started GET "/movies" for 95.90.254.77 at 2016-02-05 13:09:42 +0000
+
+
+Started GET "/" for 95.90.254.77 at 2016-02-05 13:10:16 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (4.3ms)
+Completed 200 OK in 31ms (Views: 30.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 95.90.254.77 at 2016-02-05 13:10:20 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 95.90.254.77 at 2016-02-05 13:10:20 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 2ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 95.90.254.77 at 2016-02-05 13:10:21 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 95.90.254.77 at 2016-02-05 13:10:22 +0000
+Processing by Rails::WelcomeController#index as HTML
+  Rendered /usr/local/rvm/gems/ruby-2.2.2/gems/railties-4.2.1/lib/rails/templates/rails/welcome/index.html.erb (0.1ms)
+Completed 200 OK in 3ms (Views: 3.3ms | ActiveRecord: 0.0ms)
