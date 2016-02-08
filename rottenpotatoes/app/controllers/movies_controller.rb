@@ -18,7 +18,7 @@ class MoviesController < ApplicationController
       @similiar_movies = Movie.same_director(@movie.director)
     rescue Movie::NoDirectorError
       #debugger
-      flash[:warning] = "#{@movie} has no director info"
+      flash[:warning] = "\'#{@movie.title}\' has no director info"
       redirect_to movies_path
     end
   end

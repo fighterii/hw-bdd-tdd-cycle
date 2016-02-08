@@ -14,11 +14,14 @@ module NavigationHelpers
     case page_name
 
     when /^the home\s?page$/
-      #movies_path
-      '/'
+      movies_path
+      #'/'
       
     when /^the edit page for "(.*)"$/
       edit_movie_path(Movie.find_by title: $1)
+      
+    when /^the add a new movie page$/
+      new_movie_path
      
     when /^the details page for "(.*)"$/ 
       movie_path(Movie.find_by title: $1)
